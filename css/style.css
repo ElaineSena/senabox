@@ -1,16 +1,29 @@
-root:{
+:root{
 
-.color1 { #330708 };
-.color2 { #e84624 }; /* laranja escuro */
-.color3 { #e87624 }; /* laranja */
-.color4 { #e8a726 }; /* amarelo escuro */
-.color5 { #e8d826 }; /* amarelo */
+--fundo-menu-lateral: #330708;
+--fundo-claro: #fdf4b0;
+--fundo-claro2: #e3e0b3;
 
---cor1: #330708
---cor1: #e84624
---cor1: #e87624
---cor1: #e8a726
---cor1: #e8d826
+--texto-claro: #361919;
+--texto-escuro: #e4b75f;
+
+--texto-titulo-claro: #e84624;
+--texto-titulo-escuro: #e87624;
+
+
+--cor2: #e84624;
+--cor3: #e87624;
+--cor4: #e8a726;
+--cor5: #e8d826;
+--cor6: #f5be58;
+
+
+}
+
+body{
+    background: var(--cor6);
+
+}
 
 
 
@@ -64,5 +77,3 @@ https://www.freepik.com/premium-vector/hand-drawn-brewery-logo-design_37442694.h
 
  */
 
-
-}
