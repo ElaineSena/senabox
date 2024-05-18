@@ -5,12 +5,17 @@
 --fundo-claro: #fdf4b0;
 --fundo-claro2: #e3e0b3;
 
---texto-claro: #e4b75f; 
+--borda-clara: #e4b75f;
+--borda-escura: #361919;
+
+--texto-claro: #b8a889; 
 --texto-escuro: #361919; 
 
 --texto-titulo-claro: #e87624; 
 --texto-titulo-escuro: #e84624;
---texto-hover: #d1bd95;
+--texto-hover: #e2cea4;
+
+--sombra-clara: #e4b75f;
 
 
 --cor2: #e84624;
@@ -23,12 +28,12 @@
 /* Css geral */
 body {
     font-family: Arial, Helvetica, sans-serif, Courier, monospace;
-    color: var(--texto-escuro);
+    color: var(--texto-claro);
     background: var(--fundo-claro);
 }
 
 a {
-    color: var(--texto-escuro);
+    color: var(--texto-claro);
     text-decoration: none; /* Retirar underline dos icones das redes sociais */
 }
 
@@ -44,15 +49,71 @@ h1, h2, h3, h4, h5, h6 {
 /* Cabeçalho */
 #header {
     position: fixed;
-    top: 0;
+    top: 0; /* Distancia do acima do cabeçalho */
     left: 0;
-    bottom: 0;
+    bottom: 0; /* Distancia do abaixo do cabeçalho */
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 0; /* Sobreposição */
+    z-index: 99; /* Sobreposição */
     padding: 0 15px;
     background: var(--fundo-menu-lateral);
+    overflow-y: auto; /* Ativa barra de rolagem quando a tela estiver menor */
 }
+
+#header .perfil img {
+    margin: 15px auto;
+    display: block; /*  */
+    width: 120px;
+    border: 2px solid var(--borda-clara);
+    box-shadow: 0px 0px 22px -5px var(--sombra-clara) ; /* rgba(255, 255, 255, 1)  // sombra da foto de perfil*/
+}
+
+#header .perfil h1 {
+    font-size: 24px;
+    margin: 25px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Caso tenha link nome Sena Box
+#header .perfil h1 a,
+#header .perfil h1 a:hover {
+    color: ;
+    text-decoration: none 
+*/
+
+.perfil .social-links i{
+    font-size: 18px;
+    display: inline-block;
+    background: transparent; /* ou var(--fundo-claro) */
+    color: var(--texto-claro); /* ou var(--texto-claro) */
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px; /* Largura */
+    height: 35px; /* Altura */
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
+}
+
+.perfil .social-links a:hover,
+.social-links i:hover {
+    font-size: 18px;
+    display: inline-block;
+    background: white; 
+    color: black;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
+
+
+}
+
 
 
 /* 
