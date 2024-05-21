@@ -10,10 +10,14 @@
 
 --texto-claro: #b8a889; 
 --texto-escuro: #361919; 
+--texto-hover: #e2cea4;
+--texto-opaco: #a7a29a;
+
+--cor-detalhes: #e87624;
 
 --texto-titulo-claro: #e87624; 
 --texto-titulo-escuro: #e84624;
---texto-hover: #e2cea4;
+
 
 --sombra-clara: #e4b75f;
 
@@ -110,10 +114,80 @@ h1, h2, h3, h4, h5, h6 {
     width: 35px;
     height: 35px;
     box-shadow: 0px 0px 5px 0px var(--sombra-clara);
-
-
 }
 
+/* Ajuste para o corpo principal */
+/* #main {
+    margin-left: 300px;
+}
+.container,
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+} */
+
+/* Menu Desktop */
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+
+.nav-menu * { /* * Cria uma regra de estilo para todos os filhos dentro da classe */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-menu>ul>li { /* Revisão */
+    position: relative;
+    white-space: nowrap; /* Quabra de linha bloqueada*/
+}
+
+.nav-menu a,
+.nav-menu:focus { /* Pseudoclasse */
+    display: flex;
+    align-items: center;
+    color: var(--texto-opaco);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 22px; /* Tamanho dos ícones */
+    padding-right: 10px;
+    /* color: var(--texto-titulo-claro); */
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+    color: var(--cor-detalhes);
+}
 
 
 /* 
