@@ -18,15 +18,8 @@
 --texto-titulo-claro: #e87624; 
 --texto-titulo-escuro: #e84624;
 
-
 --sombra-clara: #e4b75f;
 
-
---cor2: #e84624;
---cor3: #e87624;
---cor4: #e8a726;
---cor5: #e8d826;
---cor6: #f5be58;
 }
 
 /* Css geral */
@@ -117,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Ajuste para o corpo principal */
-/* #main {
+#main {
     margin-left: 300px;
 }
 .container,
@@ -138,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 12px;
         padding-right: 12px;
     }
-} */
+}
 
 /* Menu Desktop */
 .nav-menu {
@@ -171,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:focus i {
     font-size: 22px; /* Tamanho dos ícones */
     padding-right: 10px;
-    /* color: var(--texto-titulo-claro); */
+    /* color: var(--cor-detalhes); */
 }
 
 .nav-menu a:hover,
@@ -189,6 +182,58 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--cor-detalhes);
 }
 
+/* Menu Mobile */
+.mobile-nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 26px;
+    transition: all;
+    background: var(--cor-detalhes);
+    color: var(--texto-escuro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer; /* Faz a função de transformar em icone - aparece a mãozinha indicando botão */
+}
+
+.mobile-nav-active {
+    overflow: hidden; /* Transbordar */
+}
+
+.mobile-nav-active #header {
+    left: 0;  
+}
+
+/* Hero */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/fundo-hero");
+    background-size: cover;
+}
+#hero::before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
 
 /* 
 Sena Box - assinatura mensal de box de produtos
@@ -197,10 +242,16 @@ site no nicho de box de bebidas
 cores:
 tons laranjas
 .color1 { #330708 };
-.color2 { #e84624 }; laranja escuro
-.color3 { #e87624 }; laranja
-.color4 { #e8a726 }; amarelo escuro
-.color5 { #e8d826 }; amarelo
+.color2 { #e84624 }; 
+.color3 { #e87624 }; 
+.color4 { #e8a726 }; 
+.color5 { #e8d826 }; 
+
+--cor2: #e84624;
+--cor3: #e87624;
+--cor4: #e8a726;
+--cor5: #e8d826;
+--cor6: #f5be58;
 
 tons verdes
 cores
@@ -212,20 +263,20 @@ cores
 
 site no nicho de beleza 
 cores: 
-.color1 { #079ea6 }; verde
-.color2 { #1e0c42 }; roxo
-.color3 { #f0077b }; rosa
-.color4 { #f5be58 }; amarelo
-.color5 { #e3e0b3 }; amarelo
+.color1 { #079ea6 }; 
+.color2 { #1e0c42 }; 
+.color3 { #f0077b }; 
+.color4 { #f5be58 }; 
+.color5 { #e3e0b3 };
 
 site no nicho de bebe, alimentos naturais,  
 tons pasteis 
 cores:
-.color1 { #fdf4b0 }; amarelo
-.color2 { #a4dcb9 }; verde claro
-.color3 { #5bcebf }; azul claro
-.color4 { #32b9be }; azul medio
-.color5 { #2e97b7 }; azul escuro
+.color1 { #fdf4b0 }; 
+.color2 { #a4dcb9 }; 
+.color3 { #5bcebf };
+.color4 { #32b9be }; 
+.color5 { #2e97b7 }; 
 
 links de ideia para logo
 https://www.freepik.com/free-vector/flat-logos-collection-brewery_37415866.htm#fromView=search&page=1&position=4&uuid=d9343eae-acc3-4783-875b-6b8c51bbfb81
