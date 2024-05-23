@@ -8,6 +8,7 @@
 --borda-clara: #e4b75f;
 --borda-escura: #361919;
 
+--texto-branco: #efeae4;
 --texto-claro: #b8a889; 
 --texto-escuro: #361919; 
 --texto-hover: #e2cea4;
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block; /*  */
     width: 120px;
     border: 2px solid var(--borda-clara);
-    box-shadow: 0px 0px 22px -5px var(--sombra-clara) ; /* rgba(255, 255, 255, 1)  // sombra da foto de perfil*/
+    box-shadow: 0px 0px 10px 0px var(--sombra-clara) ; /* rgba(255, 255, 255, 1)  // sombra da foto de perfil*/
 }
 
 #header .perfil h1 {
@@ -145,8 +146,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu>ul>li { /* Revisão */
-    position: relative;
-    white-space: nowrap; /* Quabra de linha bloqueada*/
+/*     position: relative;
+ */    white-space: nowrap; /* Quabra de linha bloqueada*/
 }
 
 .nav-menu a,
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 9999;
     border: 0;
     font-size: 26px;
-    transition: all;
+    transition: all 0.4s;
     background: var(--cor-detalhes);
     color: var(--texto-escuro);
     width: 40px;
@@ -214,12 +215,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/fundo-hero");
+    background: url("../img/fundo-hero.jpg") top center;
     background-size: cover;
+
 }
 #hero::before {
     content: "";
-    background: rgba(5, 13, 24, 0.3);
+    background: rgba(24, 15, 5, 0.555);
     position: absolute;
     top: 0;
     right: 0;
@@ -233,6 +235,47 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     min-width: 300px;
 }
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+    color: var(--texto-branco);
+    text-align: center;
+}
+
+#hero p {
+    font-size: 45px;
+    text-align: center  ;
+}
+
+#hero p span {
+    color: var(--texto-branco);
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--cor-detalhes);
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: ;
+    }
+}
+
+ @media (max-width: 768px) {
+    #hero h1 {
+        font-size: 75px;
+        line-height: 90px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    #hero p {
+        font-size: 25px;
+        }
+}
+
+
 
 
 /* 
@@ -278,16 +321,4 @@ cores:
 .color4 { #32b9be }; 
 .color5 { #2e97b7 }; 
 
-links de ideia para logo
-https://www.freepik.com/free-vector/flat-logos-collection-brewery_37415866.htm#fromView=search&page=1&position=4&uuid=d9343eae-acc3-4783-875b-6b8c51bbfb81
-
-https://www.freepik.com/free-vector/beer-stickers-vintage-style_1127025.htm#fromView=image_search_similar&page=1&position=35&uuid=d1b8626f-f651-43e4-b7a9-6bb95b4ee96a
-
-https://www.freepik.com/free-vector/international-beer-day-badges_8622111.htm#fromView=image_search_similar&page=1&position=46&uuid=d1b8626f-f651-43e4-b7a9-6bb95b4ee96a
-
-https://www.freepik.com/premium-vector/flat-beer-logo-collection_1541493.htm#fromView=image_search_similar&page=1&position=50&uuid=d1b8626f-f651-43e4-b7a9-6bb95b4ee96a
-
-https://www.freepik.com/premium-vector/hand-drawn-brewery-logo-design_37442694.htm#fromView=image_search_similar&page=1&position=34&uuid=d1b8626f-f651-43e4-b7a9-6bb95b4ee96a
-
- */
-
+*/
