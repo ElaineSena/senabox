@@ -242,12 +242,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 120px;
     color: var(--texto-branco);
-    text-align: center;
+    /* text-align: center; */
 }
 
 #hero p {
     font-size: 45px;
-    text-align: center  ;
+    color: var(--texto-branco);
+    background: rgba(31, 31, 31, 0.5); 
+    /* text-align: center; */
 }
 
 #hero p span {
@@ -259,16 +261,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1024px) {
     #hero {
-        background-attachment: ;
+        background-attachment: fixed;
     }
 }
 
  @media (max-width: 768px) {
     #hero h1 {
         font-size: 75px;
-        line-height: 90px;
-        padding-left: 90px;
-        padding-right: 90px;
+        line-height: 55px; /* Altura de linha */
+        /* padding-left: 90px;
+        padding-right: 90px; */
     }
     #hero p {
         font-size: 25px;
