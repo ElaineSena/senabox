@@ -17,7 +17,7 @@
 --cor-detalhes: #e87624;
 
 --texto-titulo-claro: #e87624; 
---texto-titulo-escuro: #e84624;
+--texto-titulo-escuro: #75200f;
 
 --sombra-clara: #e4b75f;
 
@@ -308,6 +308,43 @@ h1, h2, h3, h4, h5, h6 {
         }
 }
 
+/* Seções Gerais */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    background: var(--fundo-claro)
+}
+
+.section-bg {
+    background: var(--fundo-escuro);
+    color: var(--texto-claro);
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--texto-titulo-escuro);
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--cor-detalhes);
+    bottom: -2;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Sobre */
 
 
 
