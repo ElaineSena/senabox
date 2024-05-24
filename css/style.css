@@ -44,6 +44,37 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 } 
 
+/* Botão back to top = scroll */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--cor-detalhes);
+    transition: all 1s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: var(--texto-branco);
+    line-height: 0;
+}
+
+.back-to-top {
+    /* background: var(--borda-escura); */
+    color: var(--texto-claro);
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Cabeçalho */
 #header {
     position: fixed;
@@ -165,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:focus i {
     font-size: 22px; /* Tamanho dos ícones */
     padding-right: 10px;
-    /* color: var(--cor-detalhes); */
+    /* color: var(--cor-detalhes); */ /* Cor icones menu */
 }
 
 .nav-menu a:hover,
@@ -193,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
     transition: all 0.4s;
     background: var(--cor-detalhes);
-    color: var(--texto-escuro);
+    color: var(--texto-branco); 
     width: 40px;
     height: 40px;
     border-radius: 50%;
