@@ -3,7 +3,7 @@
 
 --fundo-menu-lateral: #330708;
 --fundo-claro: #fdf4b0;
---fundo-claro2: #e3e0b3;
+--fundo-escuro: #e3e0b3;
 
 --borda-clara: #e4b75f;
 --borda-escura: #361919;
@@ -317,7 +317,7 @@ section {
 
 .section-bg {
     background: var(--fundo-escuro);
-    color: var(--texto-claro);
+    color: var(--texto-escuro);
 }
 
 .section-title {
@@ -411,12 +411,44 @@ section {
     color: var(--texto-escuro);
 }
 
+/* Opcional */
 .conquistas .count-box i:hover {
     color: var(--texto-hover);
     transition: 0.4s;
 }
 
+/* Skill // Habilidades // Vendas */
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
 
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-bg {
+    background: var(--fundo-claro);
+    height: 10px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.2;
+    background: var(--cor-detalhes);
+}
 
 /* 
 Sena Box - assinatura mensal de box de produtos
