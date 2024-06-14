@@ -758,16 +758,19 @@ section {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 16px;
-    /* color: var(--texto-escuro); */
 }
 
 .contato .info i:hover {
     background: var(--fundo-claro);
-    color: var(--texto-branco);
+    color: var(--texto-hover);
+}
+
+.contato .info .fone a {
+    color: var(--texto-escuro);
 }
 
 .contato .info .fone a:hover {
-    color: var(--cor-detalhes);
+    color: var(--texto-branco);
 }
 
 .contato .email-form {
@@ -786,7 +789,7 @@ section {
     padding-top: 30px;
     padding-bottom: 5px;
     font-size: 18px;
-    color: var(--texto-hover);
+    color: var(--texto-escuro);
 }
 
 /*.contato .email-form input,

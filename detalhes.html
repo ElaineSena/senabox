@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sena Box </title>
+    <!-- meta -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico"> 
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/aos/aos.css"> <!-- animação -->
+    <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css"> <!-- gerador de icones -->
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap/boxicons/css/boxicons.min.css">
+    <!-- boxicon.com // outra opção de gerador de icones -->
+    <link rel="stylesheet" href="bootstrap/glightbox/css/glightbox.min.css"> <!-- galeria -->
+    <link rel="stylesheet" href="bootstrap/swiper/swiper-bundle.min.css"> <!--  -->
+
+    <!-- CSS Pincipal -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Sempre por último quando tiver bootstrap -->
+
+</head>
+
+<body>
+    <!-- Botão para alternar o menu mobile -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"> </i>
+
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="perfil">
+                <a href="#home"> <img class="img-fluid rounded-circle" src="img/perfil.jpeg" alt=""> </a>
+                <h1 class="text-light"> Sena Box <!-- 🍺 --> </h1>
+
+                <div class="social-links mt-3 text-center">
+                    <!-- Redes Sociais // mt3 configuração de margem do bootstrap -->
+                    <a href="#" class="twitter" target="_blank"> <i class="bx bxl-twitter"> </i> </a>
+                    <a href="#" class="instagram" target="_blank"> <i class="bx bxl-instagram"> </i> </a>
+                    <a href="#" class="facebook" target="_blank"> <i class="bx bxl-facebook"> </i> </a>
+                    <a href="#" class="linkedin" target="_blank"> <i class="bx bxl-github"> </i> </a>
+                </div>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li> <a href="#hero" class="nav-link scrollto active"> <i class="bx bx-home"> </i> <span> Home
+                            </span> </a> </li> <!-- scroll to faz a rolagem ao clicar -->
+                    <li> <a href="#sobre" class="nav-link scrollto"> <i class="bx bx-user"> </i> <span> Sobre </span>
+                        </a> </li>
+                    <li> <a href="#resume" class="nav-link scrollto"> <i class="bx bx-file-blank"> </i> <span> Resumo
+                            </span> </a> </li>
+                    <li> <a href="#portfolio" class="nav-link scrollto"> <i class="bx bx-book-content"> </i> <span>
+                                Portfolio </span> </a> </li>
+                    <li> <a href="#services" class="nav-link scrollto"> <i class="bx bx-server"> </i> <span> Produtos
+                            </span> </a> </li>
+                    <li> <a href="#contato" class="nav-link scrollto"> <i class="bx bx-envelope"> </i> <span> Contato
+                            </span> </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!-- Fim cabeçalho -->
+
+    <main>
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2> Portfolio Detalhes </h2>
+                    <ol>
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> Portfoio Detalhes </li>
+                    </ol>
+                </div>
+            </div>
+        </section> <!-- Fim breadcrumbs // Migalhas de pão -->
+
+        <!-- Portfolio Details Section -->
+         <section id="portfolio-detalhe" class="portfolio-detalhe">
+            <div class="container">
+                <div class="row gy-4"> <!-- classe "gy-4" para adicionar um espaçamento vertical de 4 unidades -->
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="img/portfolio/portfolio-detalhes-1.jpg" alt=""> <!-- Alterar fotos -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/portfolio/portfolio-detalhes-2.jpg" alt=""> <!-- Alterar fotos -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/portfolio/portfolio-detalhes-3.jpg" alt=""> <!-- Alterar fotos -->
+                                </div>
+                            </div> <!-- Fim fotos swiper // carrossel -->
+
+                            <div class="swiper-pagination"> </div> <!-- swiper-pagination = componente de paginação do carrossel, onde os pontos ou números de página são exibidos para indicar a posição atual do slide e permitir a navegação entre os slides -->
+                        </div> <!-- Fim portfolio details slider -->
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3> Cerveja 1 </h3>
+                            <ul>
+                                <li> <strong> Categoria </strong>: Ale </li>
+                                <li> <strong> Cliente </strong>: Ale </li>
+                                <li> <strong> Project date </strong>: 16/04/2024</li>
+                                <li> <strong> Project URL </strong>: wwww.senabox.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio-descricao">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         </section>
+
+    
+   
+    </main> <!-- Fim conteúdo principal -->
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright. <strong> <span> Portfolio Sena Box </span> </strong>
+             </div>
+             <div class="creditos">
+                Desenvolvido por <i class="bi bi-github"> </i> <a href="https://github.com/ElaineSena" target="_blank"> Elaine Sena. </a>
+             </div>
+        </div>
+    </footer>
+
+    <a class="back-to-top d-flex align-items-center justify-content-center" href="#">
+        <i class="bi bi-arrow-up-short"> </i>
+    </a>
+
+    <!-- JS Bootstrap -->
+    <script src="bootstrap/aos/aos.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/glightbox/js/glightbox.min.js"></script>
+    <script src="bootstrap/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="bootstrap/purecounter/purecounter_vanilla.js"></script> <!-- contador -->
+    <script src="bootstrap/swiper/swiper-bundle.min.js"></script>
+    <script src="bootstrap/typed.js/typed.umd.js"></script> <!-- elemento de digitação -->
+    <script src="bootstrap/waypoints/noframework.waypoints.js"></script> <!--  -->
+
+    <!-- JS Principal -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
