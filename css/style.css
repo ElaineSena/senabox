@@ -290,6 +290,13 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 3px solid var(--cor-detalhes);
 }
 
+/* Efeito parallax */
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
 @media (max-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -297,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
  @media (max-width: 768px) {
-    #hero h1 {
+    #hero h1 { /* esse esta diferente #hero h2 */
         font-size: 75px;
         line-height: 55px; /* Altura de linha */
         /* padding-left: 90px;
@@ -587,49 +594,6 @@ section {
     bottom: 0;
 }
 
-/* .portfolio detalhes */
-.breadcrumbs {
-    padding: 20px 0;
-    background: var(--fundo-escuro)
-}
-
-.breadcrumbs h2 {
-    font-size: 26px;
-    font-weight: 300;
-}
-
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-}
-
-.breadcrumbs ol li { 
-    padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before { /* li+li lista dentro de lista // menu dentro de menu */
-    content: "/";
-    display: inline-block;
-    padding-right: 10px;
-    color: var(--texto-escuro);
-}
-
-@media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-        display: block !important;
-    }
-    .breadcrumbs ol {
-        display: block;
-    }
-    .breadcrumbs ol li {
-        display: inline-block;
-    }
-}
-
 /* Serviços // Produtos */
 
 .services .icon-box {
@@ -747,7 +711,7 @@ section {
 .depoimentos .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background: var(--fundo-claro);
+    background: var(--cor-detalhes);
     /* opacity: 1; */
     /* border: 1px solid var(--cor-detalhes); */
     
@@ -901,47 +865,109 @@ section {
     }
 }
 
-/* 
-Sena Box - assinatura mensal de box de produtos
+/* .portfolio adicional // Pagina dos Produtos */
+.breadcrumbs {
+    padding: 20px 0;
+    background: var(--fundo-escuro)
+}
 
-site no nicho de box de bebidas
-cores:
-tons laranjas
-.color1 { #330708 };
-.color2 { #e84624 }; 
-.color3 { #e87624 }; 
-.color4 { #e8a726 }; 
-.color5 { #e8d826 }; 
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
 
---cor2: #e84624;
---cor3: #e87624;
---cor4: #e8a726;
---cor5: #e8d826;
---cor6: #f5be58;
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
 
-tons verdes
-cores
-.color1 { #373737 };
-.color2 { #8db986 };
-.color3 { #acce91 };
-.color4 { #badb73 };
-.color5 { #efeae4 };
+.breadcrumbs ol li { 
+    padding-left: 10px;
+}
 
-site no nicho de beleza 
-cores: 
-.color1 { #079ea6 }; 
-.color2 { #1e0c42 }; 
-.color3 { #f0077b }; 
-.color4 { #f5be58 }; 
-.color5 { #e3e0b3 };
+.breadcrumbs ol li+li::before { /* li+li lista dentro de lista // menu dentro de menu */
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--texto-escuro);
+}
 
-site no nicho de bebe, alimentos naturais,  
-tons pasteis 
-cores:
-.color1 { #fdf4b0 }; 
-.color2 { #a4dcb9 }; 
-.color3 { #5bcebf };
-.color4 { #32b9be }; 
-.color5 { #2e97b7 }; 
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
 
-*/
+.portfolio-detalhes {
+    padding-top: 40px;
+}
+
+.portfolio-detalhes .detalhes-slider img {
+    width: 100%;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--cor-detalhes);
+    opacity: 1;
+    border: 1px solid black;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--texto-claro);
+}
+
+.portfolio-detalhes .portfolio-info {
+    background: var(--fundo-claro);
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(25, 15, 5, 0.9);
+}
+
+.portfolio-detalhes .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--texto-opaco);
+}
+
+.portfolio-detalhes .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-detalhes .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+.portfolio-detalhes .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-detalhes .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--texto-titulo-escuro);
+}
+
+.portfolio-detalhes .portfolio-description p {
+    padding: 0;
+}
